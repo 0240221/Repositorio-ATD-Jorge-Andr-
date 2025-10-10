@@ -1,12 +1,34 @@
 \documentclass[12pt]{book}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{amsthm}
 
-\author{Larruz Castillo Oscar André, Jorge Eduardo Gutiérrez Jiménez}
+
+\author{Larruz Castillo Oscar André\\
+	Jorge Eduardo Gutiérrez Jiménez}
 \title{Notas Análisis Topológico de Datos}
 \date{\today}
+
+\newtheorem{theorem}{Teorema}[chapter]
+\newtheorem*{theorem*}{Teorema}
+\newtheorem{lemma}[theorem]{Lema}
+\newtheorem{corollary}[theorem]{Corolario}
+\newtheorem{proposition}[theorem]{Proposición}
+\newtheorem{example}[theorem]{Ejemplo}
+\newtheorem{definition}[theorem]{Definición}
 
 \begin{document}
 \frontmatter
 \maketitle
+
+\begin{definition}
+	La torsión de un grupo abeliano $A$ es el subgrupo de A $B \leq A$ que cumple que para todo $b \in B, ord(b)=n, n \in \mathbb{N}$, y se denota por
+	$T(A)$
+\end{definition}
+
+\begin{definition}
+	Un grupo abeliano A es llamado libre de torsión si\\ $T(A) = \{0\}$. Equivalentemente, si para todo $a \in A, ord (a)= \infty$
+\end{definition}
+
 \end{document}
