@@ -4,14 +4,9 @@
 \usepackage{amsmath, amssymb, amsfonts}
 \usepackage{amsthm}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Esto lo quitaremos después
-%\usepackage[paperwidth=275.9mm, paperheight=279.4mm]{geometry}
-\usepackage{todonotes}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \author{Larruz Castillo Oscar André\\
-Jorge Eduardo Gutiérrez Jiménez}
+	Jorge Eduardo Gutiérrez Jiménez}
 \title{Notas Análisis Topológico de Datos}
 \date{\today}
 
@@ -24,23 +19,16 @@ Jorge Eduardo Gutiérrez Jiménez}
 \newtheorem{definition}[theorem]{Definición}
 
 \begin{document}
-    \frontmatter
-    \maketitle
-    \todo{Mejoren la redacción y agregeuen el párrafo que les pido.}
-    
-    \begin{definition}
-        \todo{Agreguen algunos párrafos con las definiciones de grupo,
-            grupo abeliano y orden. No tiene por qué ser definiciones como esta sino como recordatorio}
-        La torsión de un grupo abeliano $A$ es el subgrupo de A $B \leq A$ que cumple que para todo
-        $b \in B, ord(b)=n, n \in \mathbb{N}$,
-        \todo{Dentro del grupo matemático anterior hay comas no matemática. ¿Es para todo $b$ y $n$?}
-        y se denota por $T(A)$
-    \end{definition}
-    
-    \begin{definition}
-        Un grupo abeliano A es llamado libre de torsión si $T(A) = \{0\}$.
-        Equivalentemente\todo{Esta oración no tiene sentido. el punto sobra.},
-        si para todo $a \in A, ord (a)= \infty$\todo{Dentro del grupo matemático anterior hay una coma no matemática.}
-    \end{definition}
+\frontmatter
+\maketitle
+
+\begin{definition}
+	La torsión de un grupo abeliano $A$ es el subgrupo de A $B \leq A$ que cumple que para todo $b \in B, ord(b)=n, n \in \mathbb{N}$, y se denota por
+	$T(A)$
+\end{definition}
+
+\begin{definition}
+	Un grupo abeliano A es llamado libre de torsión si\\ $T(A) = \{0\}$. Equivalentemente, si para todo $a \in A, ord (a)= \infty$
+\end{definition}
 
 \end{document}
