@@ -22,51 +22,53 @@ Jorge Eduardo Gutiérrez Jiménez}
 \newtheorem{proposition}[theorem]{Proposición}
 \newtheorem{example}[theorem]{Ejemplo}
 \newtheorem{definition}[theorem]{Definición}
-\newtheorem{reminder}[theorem]{Recordatorio}
 \newtheorem{notation}[theorem]{Notación}
 
 \begin{document}
 	\frontmatter
 	\maketitle
-    
-    	\begin{reminder}
+    	Antes de iniciar con las notas del curso, es importante que se tengan en cuenta las definiciones necesarias de teoría de grupos,
+	pues trabajaremos con estas después.
+    	\begin{definition}
         		Un grupo es una tercia ordenada $(A,*,0_A)$, donde se cumple que:
 	\begin{enumerate}
-		\item [1.]
+		\item
 		$A$ es un conjunto 
-		\item [1.]
+		\item
 		$0_A$ es un elemento de $A$
-		\item [3.]
+		\item
 		* es una función cuyo dominio es $A \times A$, y cuyo contradominio es $A$, y que cumple que:
 		\begin{enumerate}
-			\item [a)]
+			\item
 			* es asociativa.
-			\item [b)]
-			Para toda $a\in A$ se cumple que $*(0_A,a)=*(a,0_A)=a$.
-			\item [c)]
-			Para toda $a\in A$, existe $b\in A$ tal que $*(b,a)=*(a,b)=0_A$.
+			\item
+			Para toda $a\in A$ se cumple que $0_A*a=a*0_A=a$.
+			\item
+			Para toda $a\in A$, existe $b\in A$ tal que $b*a=a*b=0_A$.
 		\end{enumerate}
 	\end{enumerate}
-    	\end{reminder}
+    	\end{definition}
 
-	\begin{reminder}
+	\begin{definition}
 		Un grupo $(A,*;0_A)$ es llamado abeliano si la función $*$ es conmutativa.
-	\end{reminder}
+	\end{definition}
 	
-	\begin{reminder}
-		Sea $(A,*,0_A)$ un grupo. Decimos que $B$ es subrgupo de $A$ si ocurre que $B \subseteq A$, $B \neq \varnothing$, y 
+	\begin{definition}
+		Sea $(A,*,0_A)$ un grupo. Decimos que $B$ es subrgupo de $A$ si ocurre que $B \subseteq A$ y 
 		$(B,*_{\restriction A},0_A)$ es un grupo; y lo denotamos como $B \leq A$.
-	\end{reminder}
+	\end{definition}
 
 	\begin{notation}
-		A partir de ahora, a los grupos los denotaremos solo con su primer elemento, al elemento $0_A$ como $0$, a la función $*$ con la suma, y 
-		denotaremos $\sum_{i=1}^{n} a = a^n$.
+		A partir de ahora, a un grupo $(A,+,0_A)$ lo denotaremos solo como $A$,
+		al elemento $0_A$ como $0$, a la función $*$ con la suma, y denotaremos $\sum_{i=1}^{n} a = a^n$.
 	\end{notation}
 
-	\begin{reminder}
+	\begin{definition}
 		Sea $A$ un grupo, y sea $a \in A$. Definimos el orden de $a$ como el mínimo natural tal que $a^n = 0$, en caso de que dicho natural no exista,
 		decimos que el orden de $a$ es infinito; denotamos el orden de $a$ como $ord(a)$
-	\end{reminder}
+	\end{definition}
+
+	Vistos los conceptos sobre los que se va a trabajar, empezaremos con algunas definiciones.
 
     	\begin{definition}
         		La torsión de un grupo abeliano $A$ es el subgrupo $B$ de $A$ que cumple que, para todo
