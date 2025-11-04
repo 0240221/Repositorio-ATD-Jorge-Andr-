@@ -22,25 +22,64 @@ Jorge Eduardo Gutiérrez Jiménez}
 \newtheorem{proposition}[theorem]{Proposición}
 \newtheorem{example}[theorem]{Ejemplo}
 \newtheorem{definition}[theorem]{Definición}
+\newtheorem{notation}[theorem]{Notación}
 
 \begin{document}
-    \frontmatter
-    \maketitle
-    \todo{Mejoren la redacción y agregeuen el párrafo que les pido.}
+	\frontmatter
+	\maketitle
+    	Antes de iniciar con las notas del curso, es importante que se tengan en cuenta las definiciones
+	necesarias de teoría de grupos, pues trabajaremos con estas después.
+    	\begin{definition}
+        		Un grupo es una tercia ordenada $(A,*,0_A)$, donde se cumple que:
+	\begin{enumerate}
+		\item
+		$A$ es un conjunto 
+		\item
+		$0_A$ es un elemento de $A$
+		\item
+		* es una función cuyo dominio es $A \times A$, y cuyo contradominio es $A$, y que cumple que:
+		\begin{enumerate}
+			\item
+			* es asociativa.
+			\item
+			Para toda $a\in A$ se cumple que $0_A*a=a*0_A=a$.
+			\item
+			Para toda $a\in A$, existe $b\in A$ tal que $b*a=a*b=0_A$.
+		\end{enumerate}
+	\end{enumerate}
+    	\end{definition}
+
+	\begin{definition}
+		Un grupo $(A,*,0_A)$ es llamado abeliano si la función $*$ es conmutativa.
+	\end{definition}
+	
+	\begin{definition}
+		Sea $(A,*,0_A)$ un grupo. Decimos que $B$ es subrgupo de $A$ si ocurre que $B \subseteq A$ y 
+		$(B,*_{\restriction B \times B},0_A)$ es un grupo; y lo denotamos como $B \leq A$.
+	\end{definition}
+
+	\begin{notation}
+		A partir de ahora, a un grupo $(A,*,0_A)$ lo denotaremos solo como $A$,
+		al elemento $0_A$ como $0$, trataremos a la función $*$ como una suma por conveniencia,
+		y denotaremos $\sum_{i=1}^{n} a = na$.
+	\end{notation}
+
+	\begin{definition}
+		Sea $A$ un grupo, y sea $a \in A$. Definimos el orden de $a$ como el mínimo natural tal que $na = 0$, en caso
+		de que dicho natural no exista, decimos que el orden de $a$ es infinito; denotamos el orden de $a$ como $ord(a)$
+	\end{definition}
+
+	Vistos los conceptos sobre los que se va a trabajar, empezaremos con algunas definiciones.
+
+    	\begin{definition}
+        		La torsión de un grupo abeliano $A$ es el subgrupo $B$ de $A$ que cumple que, para todo
+        		$b \in B$, tenemos que $ord(b) <\infty$.
+        		Denotamos así a este grupo como $T(A)$.
+    	\end{definition}
     
-    \begin{definition}
-        \todo{Agreguen algunos párrafos con las definiciones de grupo,
-            grupo abeliano y orden. No tiene por qué ser definiciones como esta sino como recordatorio}
-        La torsión de un grupo abeliano $A$ es el subgrupo de A $B \leq A$ que cumple que para todo
-        $b \in B, ord(b)=n, n \in \mathbb{N}$,
-        \todo{Dentro del grupo matemático anterior hay comas no matemática. ¿Es para todo $b$ y $n$?}
-        y se denota por $T(A)$
-    \end{definition}
-    
-    \begin{definition}
-        Un grupo abeliano A es llamado libre de torsión si $T(A) = \{0\}$.
-        Equivalentemente\todo{Esta oración no tiene sentido. el punto sobra.},
-        si para todo $a \in A, ord (a)= \infty$\todo{Dentro del grupo matemático anterior hay una coma no matemática.}
-    \end{definition}
+    	\begin{definition}
+        		Un grupo abeliano $A$ es llamado libre de torsión si $T(A) = \{0\}$, o equivalentemente,
+		si para todo $a \in A$, $ord (a)= \infty$
+    	\end{definition}
 
 \end{document}
